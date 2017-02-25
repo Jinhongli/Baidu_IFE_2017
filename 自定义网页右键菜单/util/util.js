@@ -7,9 +7,16 @@ var Util = (function () {
 		getStyle: function (element, style) {
 			if(window.getComputedStyle){
 				return window.getComputedStyle(element)[style];
+			}else{
+				return parseInt(element.style[style]);
 			}
 		},
-
+		setStyle: function (element,style) {
+			var key;
+			for(key in style){
+				element.style[key] = style[key];
+			}
+		},
 		extend: function (target, source) {
 			var key;
 			for(key in source){
@@ -45,8 +52,7 @@ var Util = (function () {
 			e = e || window.event;
 			var x = e.clientX;
 			var y = e.clientY;
-			var winW = document.body.clientWidth || document.documentElement.clientWidth;
-        	var winH = document.body.clientHeight || document.documentElement.clientHeight;
+			
         	return {
         		x: x,
         		y: y

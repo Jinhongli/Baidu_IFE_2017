@@ -1,33 +1,48 @@
+html {
+    height: 100%;
+}
 body {
     font: 16px/18px 'Microsoft Yahei', sans-serif;
+
+    height: 100%;
+    padding: 20px;
 }
 #root {
-    margin: 20px;
     padding: 20px;
-
+	/*height: 1000px;*/
     color: white;
     border-radius: 5px;
-    background-color: #2F3847;
+    background-color: #2f3847;
 }
 
-#menu{
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: none;
-	border: 1px solid #222832;
-	border-radius: 5px;
-	background-color: #FFFFFF;
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    border: 1px solid #222832;
+    border-radius: 5px;
+    background-color: #fff;
 }
-#menu .menu-item{
-	padding: 8px 20px;
-	color: #222832;
-	border-radius: 3px;
+#menu .menu-item {
+    cursor: pointer;
+
+    color: #222832;
+    border-radius: 3px;
 }
-#menu .menu-item a{
-	color: inherit;
+#menu .menu-item a {
+    display: block;
+
+    width: 100px;
+    padding: 10px;
+
+    text-align: center;
+
+    color: inherit;
 }
-#menu .menu-item:hover{
-	background-color: #222832;
-	color: #FFFFFF;
+#menu .menu-item:hover {
+    color: #fff;
+    background-color: #222832;
 }
