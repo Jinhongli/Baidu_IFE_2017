@@ -1,0 +1,66 @@
+body {
+    font: 16px/18px 'Trebuchet MS', 'Microsoft YaHei', sans-serif;
+
+}
+
+.team {
+    margin: 20px;
+    padding: 20px 160px 20px 240px;
+    background-color: #eee;
+    border: 1px solid #999;
+}
+
+.team > div {
+    border: 1px solid #999;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.team-description {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+.team-description h1 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+.team-description p {
+    text-indent: 2em;
+}
+
+.team-avatar {
+    box-sizing: border-box;
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+    position: relative;
+    left: -220px;
+}
+.team-avatar img{
+    float: left;
+}
+.team-avatar p{
+    margin-left: 100px;
+}
+.team-members {
+    box-sizing: border-box;
+    float: left;
+    width: 120px;
+    margin-left: -120px;
+    position: relative;
+    right: -140px;
+    border: 1px solid #999;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.team-members-member + .team-members-member {
+    margin-top: 20px;
+}
+
+.team-members-member img {
+    display: block;
+}
